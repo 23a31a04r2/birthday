@@ -1,0 +1,172 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+font-family:Segoe UI;
+background:linear-gradient(
+180deg,
+#0f3460,
+#1e90ff
+);
+color:white;
+overflow:hidden;
+}
+
+.center-box{
+width:80%;
+max-width:700px;
+}
+
+.btn{
+background:#fff;
+color:#1e90ff;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin:10px;
+}
+
+.btn-no{
+background:#ff6b81;
+color:white;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+margin:10px;
+}
+
+.teddy{
+font-size:120px;
+animation:bounce 2s infinite;
+}
+
+.envelope{
+font-size:100px;
+animation:float 3s infinite;
+}
+
+@keyframes bounce{
+50%{
+transform:translateY(-20px);
+}
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+.memory-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.memory-photo{
+width:350px;
+border-radius:20px;
+box-shadow:0 0 30px white;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:300px;
+border-radius:20px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+#heart{
+font-size:100px;
+cursor:pointer;
+animation:pulse 1s infinite;
+}
+
+#message{
+display:none;
+}
+
+@keyframes pulse{
+
+50%{
+transform:scale(1.2);
+}
+
+}
+
+#candles{
+font-size:40px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+}
+
+
+.letter-box{
+max-width:800px;
+padding:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:white;
+color:#1e90ff;
+padding:20px;
+border-radius:15px;
+font-weight:bold;
+}
+
+.gift{
+font-size:120px;
+cursor:pointer;
+animation:bounce 2s infinite;
+}
+
+#giftMessage{
+display:none;
+}
+
+#slide{
+width:400px;
+border-radius:20px;
+box-shadow:0 0 30px white;
+}
+
+.final-box{
+max-width:800px;
+padding:20px;
+}
+
+.final-box h1{
+font-size:50px;
+}
+
+.final-box p{
+font-size:22px;
+line-height:1.8;
+}

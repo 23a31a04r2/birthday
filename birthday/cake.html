@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Cake</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🎂 Happy 20th Birthday Chinnari 🎂</h1>
+
+<p>
+Make a wish...
+
+But don't tell anyone ✨
+</p>
+
+<div id="candles">
+
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+<span onclick="blow(this)">🕯️</span>
+
+</div>
+
+<div id="nextButton" style="display:none;">
+
+<a href="letter.html" class="btn">
+💌 Open Letter
+</a>
+
+</div>
+
+<script>
+
+let count=0;
+
+function blow(candle){
+
+candle.innerHTML="💨";
+
+count++;
+
+if(count==20){
+
+document.getElementById("nextButton").style.display="block";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
